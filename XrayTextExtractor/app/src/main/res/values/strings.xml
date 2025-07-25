@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TextRay</string>
+    <string name="heading1">TextRay </string>
+    <string name="heading2">Extracted Text</string>
+    <string name="button1">Choose Xray Image</string>
+    <string name="button2">Capture Xray Image</string>
+    <string name="button3">Copy Text</string>
+    <string name="display">Your extracted text will show up here.</string>
+    <string name="splash_text">TextRay</string>
+    <string name="Welcome">Welcome !</string>
+    <string name="start">Start</string>
+</resources>

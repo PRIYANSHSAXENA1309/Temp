@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/heading1"
+        android:textStyle="bold|italic"
+        android:textSize="60sp"
+        android:id="@+id/heading"
+        android:fontFamily="cursive"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="7dp"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cardView">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="230dp"
+            android:background="@color/white"
+            android:src="@drawable/imageview"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:id="@+id/ll">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="@string/button1"
+            android:backgroundTint="@color/button"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/Choose"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="@string/button2"
+            android:backgroundTint="@color/button"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/Capture"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/heading2"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/heading2"/>
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/heading2"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:id="@+id/scrollView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/display"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:id="@+id/outputText"/>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button3"
+        android:backgroundTint="@color/button"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:id="@+id/copy"/>
+
+</RelativeLayout>
